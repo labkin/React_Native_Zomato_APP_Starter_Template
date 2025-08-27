@@ -5,12 +5,18 @@ export const screenWidth = Dimensions.get("screen").width
 export const Colors = {
     white: "#FFF",
     black:"#000",
+    green: '#019A51',
     primary:"#E23744",
     secondary:"#2D2D2D",
     dark:"#18171C",
     active:"#18171C",
     border:"#E5E9EF",
-    red:"#CB202D"
+    red:"#CB202D",
+    isAddedCol: '#EF4F5F',
+    isNotAddedCol:"#FFF5F6",
+    blackOut:"#222222",
+    lightBg:'#F4F6FC',
+    active_light:'#ECFAF1',
 }
 
 

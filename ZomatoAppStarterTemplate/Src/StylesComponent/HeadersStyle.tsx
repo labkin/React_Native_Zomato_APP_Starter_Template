@@ -1,7 +1,7 @@
 import { StyleSheet, ViewStyle } from "react-native";
 import { Colors, margin, Sizes } from "./Constant";
 
-const flexRowBetween:ViewStyle= {
+export const flexRowBetween:ViewStyle= {
     flexDirection:"row",
     justifyContent:"space-between",
     alignItems:"center",
@@ -13,9 +13,10 @@ export const flexRowGap:ViewStyle= {
     gap:5
 };
 
-const flexRow:ViewStyle= {
+export const flexRowGapCntr:ViewStyle= {
     flexDirection:"row",
     alignItems:"center",
+    gap:10
 };
 
 export const headerStyl = StyleSheet.create({
@@ -23,16 +24,19 @@ export const headerStyl = StyleSheet.create({
     homeContainer:{
         flex:1,
         backgroundColor:Colors.white,
+        // marginTop:20
     },
 
     homeHeader:{
         paddingHorizontal:10,
+        alignSelf:"center",
         zIndex:10
     },
 
     locationContainer:{
         ...flexRowBetween,
         gap:margin.xs,
+        // marginHorizontal:margin.xs,
     
     },
    
@@ -60,6 +64,7 @@ export const headerStyl = StyleSheet.create({
         flexDirection:"row",
         justifyContent:"space-between",
         alignItems:"center",
+        // width:"88%",
         borderWidth:0.6,
         borderColor:"#F4F4F2",
         borderRadius:Sizes.xs,
@@ -81,3 +86,23 @@ export const headerStyl = StyleSheet.create({
     
 })
 
+{/*<Animated.View 
+style={[{flexDirection:"row", alignItems:"center", 
+backgroundColor: 'white', 
+    borderRadius: 10, height: 38, marginHorizontal:10, marginVertical:12
+}, ]}
+>
+<Pressable style={{position:"absolute", padding:10, flexDirection:"row", alignItems:"center",}}>
+    <AntDesign style={{}} name="search1" size={22} color="black" />
+    <TextInput
+      style={[{ flex: 1, fontSize: 16, color: '#333', paddingHorizontal: 10 }]}
+      value={text}
+      onChangeText={setText}
+      // placeholder={rollingTexts[currentIndex]}
+    />
+    <Animated.Text style={[rollingTextStyle, { fontSize: 16, color: '#ccc', marginLeft: 10 }]}>
+      {rollingTexts[currentIndex]}
+    </Animated.Text>
+    
+</Pressable>  
+</Animated.View>*/}

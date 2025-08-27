@@ -78,6 +78,7 @@ export const restCardStyle = StyleSheet.create({
         width:"100%",
         height:screenHeight * 0.30,
         resizeMode:"cover",
+        // overflow:"hidden"
         borderTopLeftRadius:Sizes.s,
         borderTopRightRadius:Sizes.s
     },
@@ -90,6 +91,8 @@ export const restCardStyle = StyleSheet.create({
         alignItems:"center"
     },
     nameTimeContainer:{
+
+        // width:"80%"
         flex:1
     },
 
@@ -110,6 +113,7 @@ export const restCardStyle = StyleSheet.create({
             {skewX:"-10deg"},
             {translateY:0}
         ],
+        // zIndex:-1
     }
      
  }) 

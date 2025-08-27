@@ -4,9 +4,10 @@ import { Colors } from "./Constant";
 
 export const secStyl = StyleSheet.create({
     sectionListContainer:{
-        paddingBottom:180
+        paddingBottom:300
     },
-    sickyHeaderBg:{
+    shadowBottom:{
+        
         backgroundColor:Colors.white
     },
     filterBarContainer:{
